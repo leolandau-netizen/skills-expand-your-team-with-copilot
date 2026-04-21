@@ -1,5 +1,5 @@
 import React from "react";
-import { interpolate, useCurrentFrame, Video, Img } from "remotion";
+import { interpolate, useCurrentFrame, Video, Img, staticFile } from "remotion";
 
 export const MainVideo = () => {
   const frame = useCurrentFrame();
@@ -48,7 +48,7 @@ export const MainVideo = () => {
             opacity: frame < wakingUpEnd ? 1 : 0,
           }}
         >
-          <Video src="videos/waking-up.mp4" style={{ width: "100%", height: "100%" }} />
+          <Video src={staticFile("videos/waking-up.mp4")} style={{ width: "100%", height: "100%" }} />
           {/* Overlay text */}
           <div
             style={{
@@ -90,7 +90,7 @@ export const MainVideo = () => {
           }}
         >
           <Video
-            src="videos/drinking-coffee.mp4"
+            src={staticFile("videos/drinking-coffee.mp4")}
             style={{ width: "100%", height: "100%" }}
             startFrom={frame - wakingUpEnd}
           />
@@ -135,7 +135,7 @@ export const MainVideo = () => {
           }}
         >
           <Video
-            src="videos/reading-newspaper.mp4"
+            src={staticFile("videos/reading-newspaper.mp4")}
             style={{ width: "100%", height: "100%" }}
             startFrom={frame - drinkinCoffeeEnd}
           />
