@@ -1,35 +1,35 @@
 """
-High School Management System API
+Leo Landau - Resume Website
 
-A super simple FastAPI application that allows students to view and sign up
-for extracurricular activities at Mergington High School.
+A professional portfolio website showcasing Amazon and eCommerce expertise.
 """
 
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import RedirectResponse
+from fastapi.responses import FileResponse
 import os
 from pathlib import Path
-from .backend import routers, database
 
 # Initialize web host
 app = FastAPI(
-    title="Mergington High School API",
-    description="API for viewing and signing up for extracurricular activities"
+    title="Leo Landau - Amazon & eCommerce Growth Consultant",
+    description="Professional portfolio and resume website"
 )
-
-# Initialize database with sample data if empty
-database.init_database()
 
 # Mount the static files directory for serving the frontend
 current_dir = Path(__file__).parent
-app.mount("/static", StaticFiles(directory=os.path.join(current_dir, "static")), name="static")
+static_dir = os.path.join(current_dir, "static")
+app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
-# Root endpoint to redirect to static index.html
+# Root endpoint to serve index.html
 @app.get("/")
 def root():
-    return RedirectResponse(url="/static/index.html")
+    return FileResponse(os.path.join(static_dir, "index.html"))
 
-# Include routers
-app.include_router(routers.activities.router)
-app.include_router(routers.auth.router)
+# Catch-all route for single-page app
+@app.get("/{path:path}")
+def serve_spa(path: str):
+    file_path = os.path.join(static_dir, path)
+    if os.path.isfile(file_path):
+        return FileResponse(file_path)
+    return FileResponse(os.path.join(static_dir, "index.html"))

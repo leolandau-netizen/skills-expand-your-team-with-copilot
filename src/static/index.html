@@ -1,173 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mergington High School Activities</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Mergington High School</h1>
-      <h2>Extracurricular Activities</h2>
-      <div id="user-controls">
-        <div id="user-status">
-          <button id="login-button" class="icon-button">
-            <span class="user-icon">👤</span>
-            <span>Login</span>
-          </button>
-          <div id="user-info" class="hidden">
-            <span id="display-name"></span>
-            <button id="logout-button">Logout</button>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Landau - Amazon & eCommerce Growth Consultant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Leo Landau</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
-    </header>
+    </nav>
 
-    <main>
-      <section id="activities-container">
-        <div class="main-content-layout">
-          <!-- Left Sidebar for Filters -->
-          <aside class="sidebar-filters">
-            <h3>Filter Activities</h3>
-            <!-- Search Box -->
-            <div class="search-box">
-              <input
-                type="text"
-                id="activity-search"
-                placeholder="Search activities..."
-              />
-              <button id="search-button" aria-label="Search">
-                <span class="search-icon">🔍</span>
-              </button>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Leo Landau</h1>
+            <h2>Amazon & eCommerce Growth Consultant</h2>
+            <p class="tagline">Revenue Growth • Profit Optimization • Cross-Border Expansion</p>
+            <div class="hero-contact">
+                <a href="tel:7185102374" class="btn btn-primary">Call: 718-510-2374</a>
+                <a href="mailto:leolandau@gmail.com" class="btn btn-secondary">Email Me</a>
             </div>
-
-            <div class="filter-container">
-              <div class="filter-label">Filter by category:</div>
-              <div class="category-filters" id="category-filters">
-                <button class="category-filter active" data-category="all">
-                  All
-                </button>
-                <button class="category-filter" data-category="sports">
-                  Sports
-                </button>
-                <button class="category-filter" data-category="arts">
-                  Arts
-                </button>
-                <button class="category-filter" data-category="academic">
-                  Academic
-                </button>
-                <button class="category-filter" data-category="community">
-                  Community
-                </button>
-                <button class="category-filter" data-category="technology">
-                  Technology
-                </button>
-              </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/leolandau/" target="_blank">LinkedIn</a>
             </div>
-
-            <!-- Day Filter -->
-            <div class="filter-container day-filter-container">
-              <div class="filter-label">Filter by day:</div>
-              <div class="day-filters" id="day-filters">
-                <button class="day-filter active" data-day="">All Days</button>
-                <button class="day-filter" data-day="Monday">Monday</button>
-                <button class="day-filter" data-day="Tuesday">Tuesday</button>
-                <button class="day-filter" data-day="Wednesday">
-                  Wednesday
-                </button>
-                <button class="day-filter" data-day="Thursday">Thursday</button>
-                <button class="day-filter" data-day="Friday">Friday</button>
-                <button class="day-filter" data-day="Saturday">Saturday</button>
-                <button class="day-filter" data-day="Sunday">Sunday</button>
-              </div>
-            </div>
-
-            <!-- Time Filter -->
-            <div class="filter-container time-filter-container">
-              <div class="filter-label">Filter by time:</div>
-              <div class="time-filters">
-                <button class="time-filter active" data-time="">
-                  All Times
-                </button>
-                <button class="time-filter" data-time="morning">
-                  Before School
-                </button>
-                <button class="time-filter" data-time="afternoon">
-                  After School
-                </button>
-                <button class="time-filter" data-time="weekend">Weekend</button>
-              </div>
-            </div>
-          </aside>
-
-          <!-- Activities Content -->
-          <div class="activities-content">
-            <div id="activities-list">
-              <!-- Activities will be loaded here -->
-              <p>Loading activities...</p>
-            </div>
-            <div id="message" class="hidden message"></div>
-          </div>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer>
-      <p>&copy; 2023 Mergington High School</p>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>Executive Summary</h2>
+            <div class="about-content">
+                <p>Amazon and eCommerce Growth Consultant with over <strong>20 years of experience</strong> building, scaling, and optimizing multimillion-dollar marketplace businesses. Founder of <strong>EL&EL Commerce Group</strong>, a consulting firm focused on helping brands grow revenue, improve profitability, and build scalable operations on Amazon and other eCommerce marketplaces.</p>
+
+                <p>Known for transforming underperforming Amazon accounts into strong revenue-producing channels through <strong>data-driven strategy</strong>, hands-on execution, and advanced AI tools. Experienced in managing large SKU catalogs, launching new products, expanding into international marketplaces, and building influencer and affiliate marketing programs that drive external traffic and brand growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Expertise Section -->
+    <section id="expertise" class="section expertise-section">
+        <div class="container">
+            <h2>Core Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">🎯</div>
+                    <h3>Amazon & Marketplace Strategy</h3>
+                    <p>Seller Central & Vendor Central, FBA strategy, account health, catalog structure, listing optimization, and conversion improvement</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">💰</div>
+                    <h3>Revenue Growth & Profit Optimization</h3>
+                    <p>Full P&L ownership, pricing strategy, advertising strategy, TACoS improvement, and profitability analysis</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">📢</div>
+                    <h3>Advertising & Traffic</h3>
+                    <p>Amazon PPC, Sponsored Products/Brands/Display, Google Ads, external traffic, affiliate marketing, and influencer campaigns</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">🌍</div>
+                    <h3>Expansion & Scaling</h3>
+                    <p>Cross-border expansion into Canada and Mexico, multi-marketplace expansion, new product launches and ranking strategy</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">⚙️</div>
+                    <h3>Operations & Infrastructure</h3>
+                    <p>Inventory forecasting, FBA replenishment, logistics coordination, reimbursement recovery, and operational workflow development</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">🤖</div>
+                    <h3>AI & Advanced Tools</h3>
+                    <p>AI tools for advertising optimization, content creation, data analysis, and operational efficiency to reduce costs and improve performance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2>Professional Experience</h2>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Founder and Principal Consultant</h3>
+                    <p class="company">EL&EL Commerce Group</p>
+                    <span class="year">2015 - Present</span>
+                </div>
+                <p class="description">Founded and built an independent Amazon and eCommerce consulting firm focused on helping brands successfully grow and scale on Amazon. Provide comprehensive consulting services including Amazon strategy, P&L management, PPC and advertising strategy, listing optimization, cross-border expansion, influencer and affiliate campaigns, and full account management.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Vice President of Sales and Marketing</h3>
+                    <p class="company">Etronics.com, Hackensack, NJ</p>
+                    <span class="year">1999 - 2015</span>
+                </div>
+                <p class="description">Advanced from online marketing to Vice President over 16 years. Managed online sales across Amazon, eBay, Walmart, Best Buy, and Newegg. Oversaw marketplace strategy, pricing, inventory flow, fulfillment, marketing campaigns, and partner relationships.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Client Engagements -->
+    <section id="clients" class="section clients-section">
+        <div class="container">
+            <h2>Selected Client Successes</h2>
+            <div class="clients-grid">
+                <div class="client-card">
+                    <h4>Avrix Brands</h4>
+                    <p>Lead Amazon strategy and marketplace growth across multiple brands and product categories. Developed influencer campaigns and affiliate programs to expand brand reach and drive new customer acquisition.</p>
+                </div>
+                <div class="client-card">
+                    <h4>Tiger Companies</h4>
+                    <p>Managed large-scale operation with 1,500+ SKUs generating $20M+ annually. Led cross-border expansion into Canada and Mexico, maintaining excellent account health while optimizing advertising performance.</p>
+                </div>
+                <div class="client-card">
+                    <h4>Toys4U</h4>
+                    <p>Led Amazon growth strategy resulting in doubling year-over-year sales. Improved catalog structure, listing quality, advertising strategy, and implemented influencer marketing campaigns.</p>
+                </div>
+                <div class="client-card">
+                    <h4>TWI Watches</h4>
+                    <p>Led strategic transition from Vendor Central to Seller Central. Scaled the business significantly while expanding into international marketplaces including Canada and Mexico.</p>
+                </div>
+                <div class="client-card">
+                    <h4>StorageAid</h4>
+                    <p>Built Amazon presence from the ground up and established the brand as a strong seller in the home storage category. Created operational processes for inventory, logistics, and listing management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section class="section skills-section">
+        <div class="container">
+            <h2>Platforms & Tools</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Amazon Seller Central</span>
+                <span class="skill-tag">Vendor Central</span>
+                <span class="skill-tag">Helium 10</span>
+                <span class="skill-tag">Jungle Scout</span>
+                <span class="skill-tag">Keepa</span>
+                <span class="skill-tag">SellerBoard</span>
+                <span class="skill-tag">Google Analytics</span>
+                <span class="skill-tag">Advanced Excel</span>
+                <span class="skill-tag">Adobe Photoshop</span>
+                <span class="skill-tag">Adobe Illustrator</span>
+                <span class="skill-tag">ERP Systems</span>
+                <span class="skill-tag">AI Tools</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Leo Landau</h3>
+                    <p>Amazon & eCommerce Growth Consultant</p>
+                    <p>29 Onyx Lane, Lakewood, NJ</p>
+
+                    <div class="contact-details">
+                        <p><strong>Phone:</strong> <a href="tel:7185102374">718-510-2374</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:leolandau@gmail.com">leolandau@gmail.com</a></p>
+                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/leolandau/" target="_blank">leolandau</a></p>
+                    </div>
+                </div>
+
+                <div class="references">
+                    <h3>Client References</h3>
+                    <ul>
+                        <li><strong>Avrumi Weiss</strong> – CEO, Avrix Brands | 732-670-3217</li>
+                        <li><strong>Joe Sussman</strong> – COO, Avrix Brands | 848-240-6474</li>
+                        <li><strong>Yossi Itzkowitz</strong> – President, Toys4U | 917-468-4784</li>
+                        <li><strong>Yossi Glieberman</strong> – President, TWI Watches | 646-879-3750</li>
+                        <li><strong>Jeff Schindler</strong> – President, StorageAid | 917-439-4192</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Leo Landau. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- Registration Modal -->
-    <div id="registration-modal" class="modal hidden">
-      <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h3>Register for <span id="modal-activity-name"></span></h3>
-        <form id="signup-form">
-          <div class="form-group">
-            <label for="email">Student Email:</label>
-            <input
-              type="email"
-              id="email"
-              required
-              placeholder="your-email@mergington.edu"
-            />
-          </div>
-          <input type="hidden" id="activity" value="" />
-          <button type="submit">Register</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- Login Modal -->
-    <div id="login-modal" class="modal hidden">
-      <div class="modal-content">
-        <span class="close-login-modal">&times;</span>
-        <h3>Teacher Login</h3>
-        <form id="login-form">
-          <div class="form-group">
-            <label for="username">Username:</label>
-            <input
-              type="text"
-              id="username"
-              required
-              placeholder="Enter your username"
-            />
-          </div>
-          <div class="form-group">
-            <label for="password">Password:</label>
-            <input
-              type="password"
-              id="password"
-              required
-              placeholder="Enter your password"
-            />
-          </div>
-          <button type="submit">Login</button>
-        </form>
-        <div id="login-message" class="hidden message"></div>
-      </div>
-    </div>
-
     <script src="app.js"></script>
-  </body>
+</body>
 </html>
