@@ -9,6 +9,16 @@
         "refactoring",
         "security-analysis"
       ]
+    },
+    "frontend-design-checklist": {
+      "enabled": true,
+      "capabilities": [
+        "design-review",
+        "accessibility-check",
+        "responsive-design",
+        "ui-ux-feedback",
+        "component-validation"
+      ]
     }
   },
   "development": {
