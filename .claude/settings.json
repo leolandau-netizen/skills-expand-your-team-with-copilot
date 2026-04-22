@@ -29,6 +29,17 @@
         "circular-dependency-detection",
         "module-impact-analysis"
       ]
+    },
+    "security-reviewer": {
+      "enabled": true,
+      "capabilities": [
+        "vulnerability-detection",
+        "owasp-compliance",
+        "dependency-security-audit",
+        "authentication-review",
+        "data-protection-check",
+        "injection-attack-prevention"
+      ]
     }
   },
   "development": {
