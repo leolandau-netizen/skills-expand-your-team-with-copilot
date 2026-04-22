@@ -1,0 +1,22 @@
+{
+  "plugins": {
+    "superpowers": {
+      "enabled": true,
+      "capabilities": [
+        "code-review",
+        "test-generation",
+        "documentation",
+        "refactoring",
+        "security-analysis"
+      ]
+    }
+  },
+  "development": {
+    "pythonPath": "src/",
+    "pythonVersion": "3.13"
+  },
+  "codeStyle": {
+    "language": "python",
+    "maxLineLength": 100
+  }
+}
