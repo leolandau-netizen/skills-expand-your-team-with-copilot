@@ -19,6 +19,16 @@
         "ui-ux-feedback",
         "component-validation"
       ]
+    },
+    "code-review-graph": {
+      "enabled": true,
+      "capabilities": [
+        "dependency-analysis",
+        "code-complexity-metrics",
+        "architecture-visualization",
+        "circular-dependency-detection",
+        "module-impact-analysis"
+      ]
     }
   },
   "development": {
